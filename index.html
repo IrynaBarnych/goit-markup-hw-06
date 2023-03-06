@@ -412,11 +412,31 @@
               
                 </svg>
             </button>
-                        <h2>Leave your contacts and we will call you back</h2>
-                        <label for="">Name</label>
-                        <form name="contact-form" autocomplete="on" novalidate>
-                            <input type="text"/>
-
+                        <form class="contact-form" name="contact-form" autocomplete="on" novalidate>
+                        <p class="contact-title">Leave your contacts and we will call you back</p>                     
+                            <div class="form-customers">
+                            <label class="user-info">Name
+                            <input id="info-name" type="text" name="info-name" />
+                            </label>
+                            </div>
+                            <div class="form-customers">
+                            <label class="user-info">Phone</label>
+                            <input id="user-phone" tape="text" name="user-phone" />
+                            </div>
+                            <div class="form-customers">
+                            <label class="user-info">Email</label>
+                            <input id="user-Email" tape="Email" name="user-Email" />
+                            </div>
+                            <div class="form-customers">
+                            <label class="user-info">Comment</label>
+                            <textarea name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+                            <input id="user-comment" type="comment" name="user-comment" />
+                            </div>
+                            <div class="form-customers">
+                            <input type="checkbox" name="I accept the terms and conditions of the Privacy Policy">
+                            I accept the terms and conditions of the Privacy Policy
+                            </input>
+                            </div>
                         </form>
             
         </div>
