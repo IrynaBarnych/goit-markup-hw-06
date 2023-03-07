@@ -816,7 +816,8 @@ textarea#subscribe-name {
     margin-bottom: 8px;
     padding-left: 24px;
     padding-right: 24px;
-    fill: #8e8f99
+        outline: none;
+    fill: #8e8f99;
     
 }
 
@@ -834,8 +835,6 @@ textarea#subscribe-name {
    line-height: 1.17;
             width: 360px;
                 height: 58px;
-
-   
 }
 
 .info-name {
@@ -844,9 +843,8 @@ height: 40px;
 padding-left: 38px;
         border: 1px solid #8E8F99;
             border-radius: 4px;
-
+                outline: none;
 }
-
 
 .info-name:hover {
             border: 1px solid #4D5AE5;
@@ -855,7 +853,6 @@ padding-left: 38px;
 
 .info-name:focus {
             border: 1px solid #4D5AE5;
-
 }
 
 .contact-item {
@@ -866,6 +863,7 @@ padding-left: 38px;
     transform: translate(50%, -50%);
     left: 32px;
     fill: #8E8F99;
+        outline: none;
 }
 
 .contact-item:hover {
@@ -874,6 +872,7 @@ padding-left: 38px;
 
 .info-name:focus + .contact-item {
     fill: #4D5AE5;
+
 
 }
 
