@@ -652,6 +652,8 @@ width: 25%;
         text-align: left;
 }
 
+
+
 .subscribe-info {
     display: flex;
         flex-direction: column;
@@ -848,7 +850,7 @@ padding-left: 38px;
 
 .info-name:hover {
             border: 1px solid #4D5AE5;
-                border-radius: 4px;
+
 }
 
 .info-name:focus {
@@ -872,8 +874,6 @@ padding-left: 38px;
 
 .info-name:focus + .contact-item {
     fill: #4D5AE5;
-
-
 }
 
 .user-phone {
@@ -888,12 +888,26 @@ padding-left: 38px;
         line-height: 1.17;
         width: 360px;
         height: 138px;
+
+
 }
 .user-comment {
 width: 360px;
 height: 120px;
 padding-top: 8px;
 padding-left: 16px;
+outline: none;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+
+}
+
+.user-comment:focus {
+            border: 1px solid #4D5AE5;
+}
+
+.user-comment:hover {
+    border: 1px solid #4D5AE5;
 }
 
 .private-policy {
@@ -908,6 +922,7 @@ font-weight: 400;
 line-height: 16px;
 letter-spacing: 0.04em;
 text-align: left;
+color: #4D5AE5;
 
 }
 
