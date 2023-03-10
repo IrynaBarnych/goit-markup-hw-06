@@ -769,7 +769,7 @@ textarea#subscribe-name {
 .form-customers:hover,
 .form-customers:hover {
   color: #4d5ae5;
-  fill: #4d5ae5;
+  fill: var(--button-noactive);
 }
 
 .user-info {
@@ -909,6 +909,7 @@ textarea#user-comment {
 
 .checkbox-input:checked + .form-private {
   color: #31d0aa;
+  fill: var(--light);
 }
 
 .form-checkbox {
