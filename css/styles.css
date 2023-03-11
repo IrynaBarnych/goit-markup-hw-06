@@ -13,6 +13,7 @@
   --hero-background: #2e2f42b2;
   --block-hover: #2e2f4214;
   --modal-color: #fcfcfc;
+  --checkbox-icon: #2e2f42;
 }
 
 body {
@@ -115,7 +116,7 @@ ul {
   border-radius: 2px;
   background-color: currentColor;
   content: "";
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -139,7 +140,7 @@ ul {
   font-style: normal;
   padding: 24px 0;
   display: block;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .addres-contact .link:hover,
@@ -186,8 +187,8 @@ ul {
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.04em;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-main:hover,
@@ -347,8 +348,9 @@ ul {
   letter-spacing: 0.04em;
   padding: 12px 24px;
   border-radius: 4px;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-nav-port:hover,
@@ -375,8 +377,8 @@ ul {
 .block-photo {
   flex-basis: calc((100% - 48px) / 3);
   height: 420px;
-  transition: border 250ms, cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .block-photo:hover {
@@ -388,13 +390,13 @@ ul {
 .block-image {
   position: relative;
   overflow: hidden;
-  transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-link {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-link:hover {
@@ -484,9 +486,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: fill 250ms, cubic-bezier(0.4, 0, 0.2, 1), border 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-customers {
@@ -497,7 +498,6 @@ ul {
 .customers-icon:hover,
 .customers-icon:focus {
   border: 1px solid var(--pressed-state);
-  border-radius: 4px;
   fill: var(--pressed-state);
 }
 
@@ -532,7 +532,8 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 25%;
+  width: 35%;
+  padding-left: 80px;
 }
 
 .fooret-title {
@@ -565,7 +566,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon:hover,
@@ -573,56 +574,73 @@ ul {
   background-color: var(--success);
 }
 
-.footer-item {
-}
-
 .footer-subscribe {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
-  align-items: center;
   height: auto;
-  width: 25%;
-}
-
-.subscribe-info {
-  display: flex;
+  width: 40%;
   flex-direction: column;
 }
+.title-subscribe {
+  letter-spacing: 0.04em;
+  padding-bottom: 16px;
+  padding-right: 0;
+  margin-right: 0;
+  align-items: stretch;
+  color: var(--second-text-color);
+}
 
-.subscribe-name {
-  margin-top: 16px;
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.input-subscribe {
   padding-top: 8px;
   padding-left: 16px;
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff4d;
   border-radius: 4px;
-  background-color: #2e2f42;
+  background-color: var(--checkbox-icon);
+  color: var(--second-text-color);
 }
 
 textarea#subscribe-name {
   resize: none;
 }
 
-.button-footer-Subscribe {
-  font-size: 16px;
-  line-height: 1.5;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: 25%;
-}
-
-.button-footer-Subscribe {
+.button-footer-subscribe {
   width: 165px;
   height: 40px;
-  background-color: #404bbf;
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  border: none;
+  color: var(--second-text-color);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-content: space-around;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-footer-img {
+.footer-item-img {
   width: 24px;
-  height: 20px;
+  height: 24px;
+  fill: var(--second-text-color);
+}
+
+.button-footer-subscribe:hover,
+.button-footer-subscribe:focus {
+  background-color: var(--pressed-state);
 }
 
 .social-list {
@@ -654,7 +672,7 @@ textarea#subscribe-name {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover,
@@ -713,8 +731,8 @@ textarea#subscribe-name {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1), fill 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal {
@@ -741,35 +759,10 @@ textarea#subscribe-name {
 }
 
 .contact-title {
-  font-family: Roboto;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
   margin: 72px 24px 16px 24px;
-}
-
-.form-customers {
-  position: relative;
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: #8e8f99;
-  margin-bottom: 8px;
-  padding-left: 24px;
-  padding-right: 24px;
-  outline: none;
-  fill: #8e8f99;
-}
-
-.form-customers:hover,
-.form-customers:hover {
-  color: #4d5ae5;
-  fill: var(--button-noactive);
 }
 
 .user-info {
@@ -786,17 +779,17 @@ textarea#subscribe-name {
   width: 360px;
   height: 40px;
   padding-left: 38px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text);
   border-radius: 4px;
   outline: none;
 }
 
 .info-name:hover {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--primary-brand);
 }
 
 .info-name:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--primary-brand);
 }
 
 .contact-item {
@@ -806,16 +799,16 @@ textarea#subscribe-name {
   top: 60%;
   transform: translate(50%, -50%);
   left: 32px;
-  fill: #8e8f99;
+  fill: var(--subtle-text);
   outline: none;
 }
 
 .contact-item:hover {
-  fill: #4d5ae5;
+  fill: var(--primary-brand);
 }
 
 .info-name:focus + .contact-item {
-  fill: #4d5ae5;
+  fill: var(--primary-brand);
 }
 
 .user-phone {
@@ -836,16 +829,16 @@ textarea#subscribe-name {
   padding-top: 8px;
   padding-left: 16px;
   outline: none;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text);
   border-radius: 4px;
 }
 
 .user-comment:focus {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--primary-brand);
 }
 
 .user-comment:hover {
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--primary-brand);
 }
 
 .private-policy {
@@ -853,29 +846,8 @@ textarea#subscribe-name {
   height: 16px;
 }
 
-.link-pivate {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #4d5ae5;
-}
-
 textarea#user-comment {
   resize: none;
-}
-
-.form-private {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  position: absolute;
-  color: #2e2f42;
-  padding-left: 24px;
 }
 
 .button-send {
@@ -886,7 +858,6 @@ textarea#user-comment {
 }
 
 .button-customers {
-  font-family: Roboto, sans-serif;
   background-color: var(--primary-brand);
   color: var(--second-text-color);
   font-weight: 500;
@@ -901,38 +872,100 @@ textarea#user-comment {
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.04em;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms,
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-name {
 }
 
-.checkbox-input:checked + .form-private {
-  color: #31d0aa;
-  fill: var(--light);
+.form-customers {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--subtle-text);
+  margin-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-customers:hover,
+.form-customers:hover {
+  color: #4d5ae5;
+  fill: var(--button-noactive);
 }
 
 .form-checkbox {
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.checkbox-icon {
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--subtle-text);
+  margin-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  flex-wrap: wrap;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-private {
+  font-size: 12px;
+  line-height: 0.75;
+  letter-spacing: 0.04em;
+  display: flex;
+  color: var(--checkbox-icon);
+  padding-left: 0;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  border-color: var(--pressed-state);
+  background-color: var(--pressed-state);
+  background-image: url(../images/checkbox.svg);
+  background-size: contain;
+  background-origin: content-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-input {
+  position: absolute;
   appearance: none;
+  align-items: center;
 }
 
 .checkbox-input:checked + .checkbox-icon {
   background-color: var(--pressed-state);
-  fill: var(--modal-color);
+}
+
+.checkbox-icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--checkbox-icon);
+  border-radius: 2px;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.link-pivate {
+  font-size: 12px;
+  line-height: 0.75;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--primary-brand);
+  padding-left: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-pivate:hover {
+  color: var(--pressed-state);
 }

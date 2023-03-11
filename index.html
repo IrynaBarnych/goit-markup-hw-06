@@ -462,20 +462,22 @@
             </ul>
           </div>
           <div class="footer-subscribe">
-            <label class="subscribe-info"
-              >Subscribe
-              <textarea
-                class="subscribe-name"
-                id="subscribe-name"
+            <p class="title-subscribe">Subscribe</p>
+            <form class="subscribe">
+              <input
+                class="input-subscribe"
+                type="text"
+                name="input-subscribe"
                 placeholder="E-mail"
-              ></textarea>
-            </label>
-          </div>
-          <button class="button-footer-Subscribe">Subscribe</button>
-          <div class="button-footer-Subscribe">
-            <svg class="button-footer-img">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
+              />
+
+              <button class="button-footer-subscribe" type="submit">
+                Subscribe
+                <svg class="footer-item-img">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -499,7 +501,7 @@
           </p>
 
           <div class="form-customers">
-            <label class="user-info"
+            <label class=""
               >Name
               <input class="info-name" type="text" name="info-name" />
               <svg class="contact-item">
@@ -539,23 +541,18 @@
             </label>
           </div>
 
-          <div class="form-customers">
-            <div class="form-checkbox">
+          <div class="form-checkbox">
+            <label class="form-private" for="private-policy">
               <input
                 class="checkbox-input"
                 id="private-policy"
                 type="checkbox"
                 name="user-policy"
               />
-
-              <svg class="checkbox-icon">
-                <use href="./images/icons.svg#icon-noactive-click"></use>
-              </svg>
-              <label class="form-private" for="private-policy"
-                >I accept the terms and conditions of the
-                <a class="link-pivate" href="">Privacy Policy</a>
-              </label>
-            </div>
+              <span class="checkbox-icon"></span>
+              I accept the terms and conditions of the
+              <a class="link-pivate" href="">Privacy Policy</a>
+            </label>
           </div>
 
           <div class="button-send">
