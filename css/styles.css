@@ -875,7 +875,10 @@ textarea#user-comment {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.info-name {
+
+.button-customers:hover,
+.button-customers:focus {
+  background-color: var(--pressed-state);
 }
 
 .form-customers {
